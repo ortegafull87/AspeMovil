@@ -17,7 +17,8 @@
         </activity>
         <activity android:name="res.layout.incidencia" />
         <activity android:name=".Incidencia" />
-        <activity android:name=".Signature"></activity>
+        <activity android:name=".Signature" />
+        <activity android:name=".Home"></activity>
     </application>
 
 </manifest>
