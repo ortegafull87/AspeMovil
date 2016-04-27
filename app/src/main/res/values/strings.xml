@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AspeMovil</string>
+    <string name="title_activity_signature_pad">SignaturePad</string>
 </resources>

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name="res.layout.incidencia" />
-        <activity android:name=".Incidencia"></activity>
+        <activity android:name=".Incidencia" />
+        <activity android:name=".Signature"></activity>
     </application>
 
 </manifest>

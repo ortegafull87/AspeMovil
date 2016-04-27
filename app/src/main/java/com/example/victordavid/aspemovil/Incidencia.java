@@ -3,6 +3,7 @@ package com.example.victordavid.aspemovil;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,7 +26,8 @@ public class Incidencia extends AppCompatActivity {
     }
 
     public void registraIncidencia(View view){
-
+        Intent intent = new Intent(this,Signature.class);
+        startActivity(intent);
     }
 
     public void showTimePickerFragment(View v) {
