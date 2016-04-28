@@ -23,7 +23,7 @@ public class Utils extends AppCompatActivity {
      * Muestra mensaje corto
      * @param messaje
      */
-    public void showMessage(String messaje){
-        Toast.makeText(getApplicationContext(), messaje, Toast.LENGTH_SHORT).show();
+    public void showMessage(Context context,String messaje){
+        Toast.makeText(context, messaje, Toast.LENGTH_SHORT).show();
     }
 }

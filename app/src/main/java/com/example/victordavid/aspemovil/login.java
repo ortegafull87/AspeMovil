@@ -15,6 +15,8 @@ import com.example.victordavid.aspemovil.Utils;
 
 public class login extends AppCompatActivity {
 
+    private Utils utils = new Utils();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,9 +55,9 @@ public class login extends AppCompatActivity {
     }
 
     public void doLogin() {
-        //new Utils().showMessage("OK! I'm performing login.");
+        utils.showMessage(getApplicationContext(),"OK! I'm performing login.");
         // TODO: login procedure; not within the scope of this tutorial.
-        Intent intent = new Intent(this,Home.class);
+        Intent intent = new Intent(this,Incidencia.class);
         startActivity(intent);
     }
 }
