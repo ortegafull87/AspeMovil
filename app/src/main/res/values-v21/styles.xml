@@ -1,14 +1,3 @@
 <resources>
 
-    <style name="PopupTheme" parent="Theme.AppCompat.Light">
-        <!--<item name="actionOverflowMenuStyle">@style/OverflowMenu</item>-->
-        <!--https://github.com/danielme-com/-Android-popup-menu- -Support-library/blob/master/res/values/styles.xml-->
-    </style>
-
-    <!-- displays the overflow menu below the toolbar-->
-    <style name="OverflowMenu" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
-        <item name="android:dropDownVerticalOffset">-4dp</item>
-        <item name="overlapAnchor">false</item>
-    </style>
-
 </resources>
