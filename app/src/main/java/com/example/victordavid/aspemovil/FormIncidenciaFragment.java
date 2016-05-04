@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -21,18 +23,24 @@ import android.widget.Toast;
 public class FormIncidenciaFragment extends Fragment {
 
     View v;
+    private String NOMBRE_FRAGMENT="Incidencia";
 
     public FormIncidenciaFragment() {
         // Required empty public constructor
     }
 
+    private ActionBar getActionBar() {
+        return ((Home) getActivity()).getSupportActionBar();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        getActionBar().setTitle(NOMBRE_FRAGMENT);
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_form_incidencia, container, false);
 
+        /*Listener Para Fecha*/
         EditText edit = (EditText)v.findViewById(R.id.fecha);
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,18 +52,6 @@ public class FormIncidenciaFragment extends Fragment {
 
         });
 
-        /*
-        edit.setOnTouchListener(new View.OnTouchListener()
-        {
-            public boolean onTouch(View arg0, MotionEvent arg1)
-            {
-                DatePickerFragment newFragment = new DatePickerFragment();
-                newFragment.setElement((TextView)v.findViewById(R.id.fecha));
-                newFragment.show(getFragmentManager(), "datePicker");
-                return false;
-            }
-        });
-        */
         return v;
     }
 }

@@ -29,8 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
-                    android:hint="Fecha"
-                    android:onClick="setFechaIncidencia"/>
+                    android:hint="Fecha"/>
 
             </android.support.design.widget.TextInputLayout>
 

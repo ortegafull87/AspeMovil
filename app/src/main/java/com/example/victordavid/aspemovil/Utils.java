@@ -26,4 +26,5 @@ public class Utils extends AppCompatActivity {
     public void showMessage(Context context,String messaje){
         Toast.makeText(context, messaje, Toast.LENGTH_SHORT).show();
     }
+
 }

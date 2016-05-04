@@ -16,12 +16,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
-    Toolbar myToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
     }
 
@@ -53,7 +53,6 @@ public class Home extends AppCompatActivity {
 
                 //Paso 4: Confirmar el cambio
                 transaction.commit();
-                //myToolbar.setTitle("Incidencia");
                 return true;
             case R.id.action_edit:
                 action(R.string.action_edit);
