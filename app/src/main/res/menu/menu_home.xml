@@ -5,7 +5,7 @@
     tools:context=".Home">
 
     <item
-        android:id="@+id/action_add"
+        android:id="@+id/add_fragment"
         android:icon="@mipmap/ic_action_new"
         android:title="@string/action_add"
         app:showAsAction="always" />
