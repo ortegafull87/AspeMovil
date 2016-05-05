@@ -11,5 +11,16 @@ public class DataBaseManager {
     public static final String CN_USER = "usuario";
     public static final String CN_PASS = "contrasena";
 
+/*create table usuario(
+            _id integer primary key autoincrement,
+            nombre text not null,
+            usuario text not null,
+            contrasena  text not null
 
+    )*/
+    public static final String CREATE_TABLE = " CREATE TABLE " + TABLE_NAME + " ("
+        + CN_ID + " integer primary key autoincrement,"
+        + CN_NAME + " text not null,"
+        + CN_USER + " text not null,"
+        + CN_PASS + " text);";
 }
