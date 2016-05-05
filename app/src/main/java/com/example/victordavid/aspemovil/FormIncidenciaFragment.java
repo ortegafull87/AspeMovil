@@ -52,6 +52,53 @@ public class FormIncidenciaFragment extends Fragment {
 
         });
 
+        /*Listener Para Fecha Inicio*/
+        EditText fechaInicio = (EditText)v.findViewById(R.id.fechaInicio);
+        fechaInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerFragment newFragment = new DatePickerFragment();
+                newFragment.setElement((TextView)v.findViewById(R.id.fechaInicio));
+                newFragment.show(getFragmentManager(), "datePicker");
+            }
+
+        });
+
+        /*Listener Para Hora Inicio*/
+        EditText horaInicio = (EditText)v.findViewById(R.id.horaInicio);
+        horaInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimePickerFragment newFragment = new TimePickerFragment();
+                newFragment.setElement((TextView)v.findViewById(R.id.horaInicio));
+                newFragment.show(getFragmentManager(), "timePicker");
+            }
+
+        });
+
+        /*Listener Para Fecha Termino*/
+        EditText fechaTermino = (EditText)v.findViewById(R.id.fechaTermino);
+        fechaTermino.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerFragment newFragment = new DatePickerFragment();
+                newFragment.setElement((TextView)v.findViewById(R.id.fechaTermino));
+                newFragment.show(getFragmentManager(), "datePicker");
+            }
+
+        });
+
+        /*Listener Para Hora Termino*/
+        EditText horaTermino = (EditText)v.findViewById(R.id.horaTermino);
+        horaTermino.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimePickerFragment newFragment = new TimePickerFragment();
+                newFragment.setElement((TextView)v.findViewById(R.id.horaTermino));
+                newFragment.show(getFragmentManager(), "timePicker");
+            }
+
+        });
         return v;
     }
 }

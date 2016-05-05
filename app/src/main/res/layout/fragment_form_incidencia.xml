@@ -28,7 +28,7 @@
                     android:id="@+id/fecha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="none"
+                    android:focusable="false"
                     android:hint="Fecha"/>
 
             </android.support.design.widget.TextInputLayout>
@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="date"
                         android:hint="Fecha Inicia"
-                        android:allowUndo="true" />
+                        android:focusable="false" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -96,7 +96,8 @@
                         android:id="@+id/horaInicio"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="date"
+                        android:inputType="time"
+                        android:focusable="false"
                         android:hint="Hora Inicia"/>
 
                 </android.support.design.widget.TextInputLayout>
@@ -118,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="date"
+                        android:focusable="false"
                         android:hint="Fecha Termina"/>
 
                 </android.support.design.widget.TextInputLayout>
@@ -131,7 +133,8 @@
                         android:id="@+id/horaTermino"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="date"
+                        android:inputType="time"
+                        android:focusable="false"
                         android:hint="Hora Termina"/>
 
                 </android.support.design.widget.TextInputLayout>
