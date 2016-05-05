@@ -1,20 +1,14 @@
 package com.example.victordavid.aspemovil;
 
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 /**
@@ -41,8 +35,10 @@ public class FormIncidenciaFragment extends Fragment {
         v = inflater.inflate(R.layout.fragment_form_incidencia, container, false);
 
         /*Listener Para Fecha*/
-        EditText edit = (EditText)v.findViewById(R.id.fecha);
-        edit.setOnClickListener(new View.OnClickListener() {
+        EditText fecha = (EditText)v.findViewById(R.id.fecha);
+        /*Se precarga este campo con la fecha actual*/
+        fecha.setText(new Utils().getToDay());
+        fecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DatePickerFragment newFragment = new DatePickerFragment();
@@ -54,6 +50,8 @@ public class FormIncidenciaFragment extends Fragment {
 
         /*Listener Para Fecha Inicio*/
         EditText fechaInicio = (EditText)v.findViewById(R.id.fechaInicio);
+        /*Se precarga este campo con la fecha actual*/
+        fechaInicio.setText(new Utils().getToDay());
         fechaInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

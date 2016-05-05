@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.victordavid.aspemovil.SignaturePadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/signaturePad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/white"
+        android:eventsInterceptionEnabled="true"
+        android:fadeEnabled="false"
+        android:gestureColor="@color/blackMid"
+        android:gestureStrokeLengthThreshold="0.1"
+        android:gestureStrokeType="multiple"
+        android:orientation="vertical" >
+    </android.gesture.GestureOverlayView>
+
+    <Button
+        android:id="@+id/DoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="saveSig"
+        android:text="Done" />
+</FrameLayout>
