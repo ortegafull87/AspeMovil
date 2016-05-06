@@ -17,6 +17,11 @@ import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
+    //Obtener la instancia del administrador de fragmentos
+    FragmentManager fragmentManager = getSupportFragmentManager();
+    //Crear una nueva transacción
+    FragmentTransaction transaction = fragmentManager.beginTransaction();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,26 +41,26 @@ public class Home extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.add_fragment:
-                /**
-                Intent intent = new Intent(this,Incidencia.class);
-                startActivity(intent);
-                action(R.string.action_add);
-                 */
+
                 //Paso 1: Obtener la instancia del administrador de fragmentos
-                FragmentManager fragmentManager = getSupportFragmentManager();
-
+                fragmentManager = getSupportFragmentManager();
                 //Paso 2: Crear una nueva transacción
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-
+                transaction = fragmentManager.beginTransaction();
                 //Paso 3: Crear un nuevo fragmento y añadirlo
-                FormIncidenciaFragment fragment = new FormIncidenciaFragment();
-                transaction.add(R.id.contenedor, fragment);
-
-                //Paso 4: Confirmar el cambio
+                //Paso 4: Definir la acción que tendrá la carga
+                transaction.replace(R.id.contenedor, new FormIncidenciaFragment());
+                //Paso 5: Definir la accion goback
+                transaction.addToBackStack(null);
+                //Paso 6: Confirmar el cambio
                 transaction.commit();
+
                 return true;
             case R.id.action_edit:
-                action(R.string.action_edit);
+                fragmentManager = getSupportFragmentManager();
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.contenedor, new SignaturePadFragment());
+                transaction.addToBackStack(null);
+                transaction.commit();
                 return true;
             case R.id.action_settings:
                 action(R.string.action_settings);

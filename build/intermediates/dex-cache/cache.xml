@@ -2,32 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_f9e38b6f503ddcf965469f9d0d94db1681a644f9\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_34e798eacb303b471194c24d99f2d42a243d4016\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
         <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_e3704e43f16cbbc1405778fe32fa0bd4599fe499\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="e298501958f5d7645bbeee6b724481bce7fbb4ff">
-        <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f48e5cbeee1bc2dac56be0349f839a1345a9f64f\classes.dex" />
     </item>
     <item
         jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
@@ -51,6 +30,27 @@
         <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_73ee0df0dfd533c6bf76cd3354cdf499873bd60b\classes.dex" />
     </item>
     <item
+        jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_f9e38b6f503ddcf965469f9d0d94db1681a644f9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_34e798eacb303b471194c24d99f2d42a243d4016\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3694e449b411877b74e6f344a8aee8235547742f">
+        <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f48e5cbeee1bc2dac56be0349f839a1345a9f64f\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\VictorDavid\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
         jumboMode="true"
         revision="23.0.3"
@@ -61,7 +61,7 @@
         jar="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="8855bcd5f1f75b6e5f48d836584a128ed2983a68">
+        sha1="414f0794b1a623a0c2ed825558ca047b8c43ec09">
         <dex dex="C:\Users\VictorDavid\AndroidStudioProjects\AspeMovil\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_10812442ae4643682fada43eea2d46064d49c7f1\classes.dex" />
     </item>
     <item
