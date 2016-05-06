@@ -27,7 +27,10 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        myToolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(myToolbar);
+
+        getDoneInstancias();
     }
 
     @Override
@@ -79,4 +82,19 @@ public class Home extends AppCompatActivity {
     private void action(int resid) {
         Toast.makeText(this, getText(resid), Toast.LENGTH_SHORT).show();
     }
+    private void getDoneInstancias(){
+        fragmentManager = getSupportFragmentManager();
+        transaction = fragmentManager.beginTransaction();
+        //VErifica a SQLit
+
+        if(Boolean.FALSE){
+            // si hay registros
+        }else{
+            // si no hay registros;
+            transaction.replace(R.id.contenedor, new ErrorFragment());
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
+    }
+
 }

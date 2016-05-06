@@ -59,7 +59,7 @@ public class login extends AppCompatActivity {
     }
 
     public void doLogin() {
-        utils.showMessage(getApplicationContext(),"OK! I'm performing login.");
+        utils.showMessage(getApplicationContext(),"Bienvenido");
         // TODO: login procedure; not within the scope of this tutorial.
         Intent intent = new Intent(this,Home.class);
         startActivity(intent);
