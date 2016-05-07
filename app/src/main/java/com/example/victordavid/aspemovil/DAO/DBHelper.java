@@ -1,8 +1,10 @@
-package com.example.victordavid.aspemovil;
+package com.example.victordavid.aspemovil.DAO;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.victordavid.aspemovil.DAO.DataBaseManager;
 
 /**
  * Created by VictorDavid on 04/05/2016.

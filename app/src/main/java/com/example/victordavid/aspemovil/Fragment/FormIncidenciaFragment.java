@@ -1,4 +1,4 @@
-package com.example.victordavid.aspemovil;
+package com.example.victordavid.aspemovil.Fragment;
 
 
 import android.os.Bundle;
@@ -9,6 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.victordavid.aspemovil.Fragment.DatePickerFragment;
+import com.example.victordavid.aspemovil.Fragment.TimePickerFragment;
+import com.example.victordavid.aspemovil.Home;
+import com.example.victordavid.aspemovil.R;
+import com.example.victordavid.aspemovil.Util.Utils;
 
 
 /**

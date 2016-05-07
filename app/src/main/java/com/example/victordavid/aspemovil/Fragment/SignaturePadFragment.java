@@ -1,4 +1,4 @@
-package com.example.victordavid.aspemovil;
+package com.example.victordavid.aspemovil.Fragment;
 
 import android.gesture.GestureOverlayView;
 import android.graphics.Bitmap;
@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.victordavid.aspemovil.Home;
+import com.example.victordavid.aspemovil.R;
 
 import java.io.File;
 import java.io.FileOutputStream;

@@ -1,7 +1,5 @@
 package com.example.victordavid.aspemovil;
 
-import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -10,10 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.victordavid.aspemovil.Fragment.ErrorFragment;
+import com.example.victordavid.aspemovil.Fragment.FormIncidenciaFragment;
+import com.example.victordavid.aspemovil.Fragment.SignaturePadFragment;
 
 public class Home extends AppCompatActivity {
 

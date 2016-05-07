@@ -1,18 +1,17 @@
 package com.example.victordavid.aspemovil;
 
-import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Toast;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.example.victordavid.aspemovil.Utils;
+
+import com.example.victordavid.aspemovil.DAO.DBHelper;
+import com.example.victordavid.aspemovil.Util.Utils;
 
 public class login extends AppCompatActivity {
 

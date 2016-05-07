@@ -1,4 +1,4 @@
-package com.example.victordavid.aspemovil;
+package com.example.victordavid.aspemovil.Bean;
 
 /**
  * Created by VictorDavid on 06/05/2016.

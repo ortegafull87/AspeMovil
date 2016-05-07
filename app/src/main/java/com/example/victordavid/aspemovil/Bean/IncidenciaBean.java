@@ -1,4 +1,6 @@
-package com.example.victordavid.aspemovil;
+package com.example.victordavid.aspemovil.Bean;
+
+import com.example.victordavid.aspemovil.Bean.GastosBean;
 
 import java.util.ArrayList;
 
