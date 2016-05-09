@@ -8,11 +8,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.victordavid.aspemovil.Bean.GastosBean;
+import com.example.victordavid.aspemovil.Bean.IncidenciaBean;
 import com.example.victordavid.aspemovil.Fragment.ErrorFragment;
 import com.example.victordavid.aspemovil.Fragment.FormIncidenciaFragment;
 import com.example.victordavid.aspemovil.Fragment.SignaturePadFragment;
+
+import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
 
@@ -21,6 +28,9 @@ public class Home extends AppCompatActivity {
     //Crear una nueva transacción
     FragmentTransaction transaction = fragmentManager.beginTransaction();
 
+    private IncidenciaBean incidenciaBean;
+    private ArrayList<GastosBean> gastosBeanArrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +38,6 @@ public class Home extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         myToolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(myToolbar);
-
         getDoneInstancias();
     }
 
@@ -58,6 +67,8 @@ public class Home extends AppCompatActivity {
 
                 return true;
             case R.id.action_edit:
+
+                Toast.makeText(getApplicationContext(),"Fecha:"+getFormIncidencia().getFechaIncidencia(), Toast.LENGTH_SHORT).show();
                 fragmentManager = getSupportFragmentManager();
                 transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.contenedor, new SignaturePadFragment());
@@ -96,4 +107,53 @@ public class Home extends AppCompatActivity {
         }
     }
 
+    private IncidenciaBean getFormIncidencia(){
+        //Fecha Incidencia.
+        EditText formElement = (EditText) findViewById(R.id.fecha);
+        incidenciaBean = new IncidenciaBean();
+        incidenciaBean.setFechaIncidencia(formElement.getText().toString());
+        //Guardia Faltó
+        formElement = (EditText)findViewById(R.id.guardiaF);
+        incidenciaBean.setGuardiaFalto(formElement.getText().toString());
+        //Guardia Suple.
+        formElement = (EditText)findViewById(R.id.guardiaS);
+        incidenciaBean.setGuardiaSuple(formElement.getText().toString());
+        //Fecha y Hora Inicia
+        StringBuilder elementoCompuesto = new StringBuilder();
+        formElement = (EditText)findViewById(R.id.fechaInicio);
+        elementoCompuesto.append(formElement.getText().toString());
+        elementoCompuesto.append(" ");
+        formElement = (EditText)findViewById(R.id.horaInicio);
+        elementoCompuesto.append(formElement.getText().toString());
+        incidenciaBean.setFechaHoraInicia(elementoCompuesto.toString());
+        //Fecha y Hora Termina
+        elementoCompuesto = new StringBuilder();
+        formElement = (EditText)findViewById(R.id.fechaTermino);
+        elementoCompuesto.append(formElement.getText().toString());
+        elementoCompuesto.append(" ");
+        formElement = (EditText)findViewById(R.id.horaTermino);
+        elementoCompuesto.append(formElement.getText().toString());
+        //Gastos
+        incidenciaBean.setGastos(this.getGastosForm());
+        //Observaciones
+        /*formElement = (EditText)findViewById(R.id.observaciones);
+        incidenciaBean.setObservaciones(formElement.getText().toString());*/
+        return incidenciaBean;
+
+    }
+
+    /**
+     *
+     */
+    private void setListaGastos(){
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    private ArrayList<GastosBean> getGastosForm(){
+        return new ArrayList<GastosBean>();
+    }
 }
